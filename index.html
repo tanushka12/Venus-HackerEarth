@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<style> @font-face {
+   font-family: Roboto;
+   src: url(roboto.thin.woff);
+}</style>
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	<script type="text/javascript">
+	
+window.onload = function () {
+	var chart1 = new CanvasJS.Chart("chartContainer1",
+	{
+		title:{
+			text: "How women travel (Current Scenario)"
+		},
+		
+		axisY:{
+			title:"No. of Women",
+		
+		},
+		axisX:{
+			title:"Route Nos.",
+		
+		},
+		data: [
+		{
+			type: "stackedColumn",
+			legendText: "Bus",
+			showInLegend: "true",
+			dataPoints: [
+				{  y: 5761 , label: "1"},
+				{  y: 9221, label: "2" },
+				{  y: 7102, label: "3" },
+				{  y: 8347, label: "4" },
+				{  y: 9600, label: "5"},
+				{  y: 6200, label: "6"}
+			]
+		},  {
+			type: "stackedColumn",
+			legendText: "Cab",
+			showInLegend: "true",
+			indexLabelPlacement: "outside",
+			dataPoints: [
+				{  y: 10940 , label: "1"},
+				{  y: 20079, label: "2" },
+				{  y: 15038, label: "3" },
+				{  y: 17607, label: "4" },
+				{  y: 22965, label: "5"},
+				{  y: 12931, label: "6"}
+			]
+		},
+		 {
+			type: "stackedColumn",
+			legendText: "Other",
+			showInLegend: "true",
+			indexLabelPlacement: "outside",
+			dataPoints: [
+				{  y: 1678 , label: "1"},
+				{  y: 3400, label: "2" },
+				{  y: 1567, label: "3" },
+				{  y: 3007, label: "4" },
+				{  y: 2750, label: "5"},
+				{  y: 2097, label: "6"}
+			]
+		}
+		]
+	});
+	
+	var chart2 = new CanvasJS.Chart("chartContainer2",
+	{
+		title:{
+			text: "How women travel (Expected Scenario)"
+		},
+		animationEnabled: true,
+		axisY:{
+			title:"No. of Women",
+		
+		},
+		axisX:{
+			title:"Route Nos.",
+				},
+		data: [
+		{
+			type: "stackedColumn",
+			legendText: "Bus",
+			showInLegend: "true",
+			dataPoints: [
+				{  y: 12761 , label: "1"},
+				{  y: 17421, label: "2" },
+				{  y: 20102, label: "3" },
+				{  y: 15347, label: "4" },
+				{  y: 22300, label: "5"},
+				{  y: 14200, label: "6"}
+			]
+		},  {
+			type: "stackedColumn",
+			legendText: "Cab",
+			showInLegend: "true",
+			indexLabelPlacement: "outside",
+			dataPoints: [
+				{  y: 4940 , label: "1"},
+				{  y: 8079, label: "2" },
+				{  y: 9038, label: "3" },
+				{  y: 7607, label: "4" },
+				{  y: 8965, label: "5"},
+				{  y: 9931, label: "6"}
+			]
+		},
+		 {
+			type: "stackedColumn",
+			legendText: "Other",
+			showInLegend: "true",
+			indexLabelPlacement: "outside",
+			dataPoints: [
+				{  y: 1678 , label: "1"},
+				{  y: 3400, label: "2" },
+				{  y: 1567, label: "3" },
+				{  y: 3007, label: "4" },
+				{  y: 2750, label: "5"},
+				{  y: 2097, label: "6"}
+			]
+		}
+		]
+	});
+	
+	chart1.render();
+	chart2.render();
+}
+</script>
+<script type="text/javascript" src="C:\Users\admin\Downloads\canvasjs-1.9.6\canvasjs.min.js"></script></head>
+</head>
+<body>
+	<div class="cd-slideshow-wrapper">
+		<nav class="cd-slideshow-nav">
+			<button class="cd-nav-trigger">
+				Open Nav
+				<span aria-hidden="true"></span>
+			</button>
+			
+			<div class="cd-nav-items">
+				<ol>
+					<li><a href="#slide-1">About</a></li>
+					
+					<li>
+						<a href="#slide-2">Pitch</a>
+						<ol class="sub-nav">
+							<li><a href="#slide-2">Sub 1</a></li>
+							<li><a href="#slide-2">Sub 2</a></li>
+							<li><a href="#slide-2">Sub 3</a></li>
+						</ol>
+					</li>
+					<li><a href="#slide-3">Impact And Applicability</a>
+					<ol class="sub-nav">
+							<li><a href="#slide-3">Sub 1</a></li>
+							<li><a href="#slide-3">Sub 2</a></li>
+							<li><a href="#slide-3">Sub 3</a></li>
+						</ol>
+					</li>
+					
+					<li><a href="#slide-4">Return On Investment </a>
+					<ol class="sub-nav">
+							<li><a href="#slide-4">Sub 1</a></li>
+							</ol>
+					</li>
+					
+					</ol>
+			</div> <!-- .cd-nav-items -->
+		</nav> <!-- .cd-slideshow-nav -->
+		
+		<ol class="cd-slideshow">
+			<li class="visible" id="slide-1">
+				<div class="cd-slider-content">
+					<div class="content-wrapper">
+						<h1><li style="color:#000000">TEAM VENUS</h1>
+						<p>Participants - <br><br>
+						Tanushka Malhotra &amp; Sumedha Khurana
+						</p>
+						<svg version="1.1" id="icon-keyboard" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="186px" height="60px" viewBox="0 0 186 60" enable-background="new 0 0 186 60" xml:space="preserve">
+						<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M119,59H67c-1.10457,0-2-0.89543-2-2V36
+							c0-1.10457,0.89543-2,2-2h52c1.10457,0,2,0.89543,2,2v21C121,58.10457,120.10457,59,119,59z"/>
+						<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M119,26H67c-1.10457,0-2-0.89543-2-2V3
+							c0-1.10457,0.89543-2,2-2h52c1.10457,0,2,0.89543,2,2v21C121,25.10457,120.10457,26,119,26z"/>
+						<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M55,59H3c-1.10457,0-2-0.89543-2-2V36
+							c0-1.10457,0.89543-2,2-2h52c1.10457,0,2,0.89543,2,2v21C57,58.10457,56.10457,59,55,59z"/>
+						<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M183,59h-52c-1.10457,0-2-0.89543-2-2V36
+							c0-1.10457,0.89543-2,2-2h52c1.10457,0,2,0.89543,2,2v21C185,58.10457,184.10457,59,183,59z"/>
+						<path fill="#000000" d="M92.54309,49.97196l-3.23061-7.26889C89.16552,42.37243,89.40755,42,89.76938,42h6.46124
+							c0.36182,0,0.60386,0.37243,0.4569,0.70307l-3.23061,7.26889C93.28094,50.36787,92.71906,50.36787,92.54309,49.97196z"/>
+						<path fill="#000000" d="M92.54309,10.02804l-3.23061,7.26889C89.16552,17.62757,89.40755,18,89.76938,18h6.46124
+							c0.36182,0,0.60386-0.37243,0.4569-0.70307l-3.23061-7.26889C93.28094,9.63213,92.71906,9.63213,92.54309,10.02804z"/>
+						<path fill="#000000" d="M25.02804,46.04309l7.26889-3.23062C32.62757,42.66552,33,42.90755,33,43.26938v6.46124
+							c0,0.36183-0.37243,0.60386-0.70307,0.45691l-7.26889-3.23062C24.63213,46.78095,24.63213,46.21905,25.02804,46.04309z"/>
+						<path fill="#000000" d="M160.97197,46.04309l-7.26891-3.23062C153.37242,42.66552,153,42.90755,153,43.26938v6.46124
+							c0,0.36183,0.37242,0.60386,0.70306,0.45691l7.26891-3.23062C161.36787,46.78095,161.36787,46.21905,160.97197,46.04309z"/>
+						</svg>
+					</div>
+				</div>
+			</li>
+
+			<li id="slide-2">
+				<ol class="sub-slides">
+					<li>
+						<div class="cd-slider-content">
+							<div class="content-wrapper">
+								<h2>In today's world, are women safe while travelling in a bus?</h2>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="cd-slider-content">
+							<div class="content-wrapper">
+							<img src = "img/safety1.png" width = "200" height="200" class="align-left">
+							<img src = "img/Capture.jpg" width = "200" height="200" class="align-right">							
+								<h2><br><br>The answer is a big "NO" !</h2>
+
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="cd-slider-content">
+							<div class="content-wrapper">
+								<h3><li style = "margin-left:65px"; "margin-right:65px">Our Data Analytics Technique will help to find out a way in which women can feel safe to travel in a bus.</li></h3>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="cd-slider-content">
+							<div class="content-wrapper">
+								<h3>The number of working men and women in an area are recorded and then analysis is done on this data. The analysis will be based on different algorithms and depending upon the results of the analysis, a particular algorithm will be selected.</h3>
+							</div>
+						</div>
+					</li>
+				</ol> <!-- .sub-slides -->
+			</li>
+
+			<li id="slide-3">
+				<ol class="sub-slides">
+					<li>
+						<div class="cd-slider-content">
+							<div class="content-wrapper">
+								<h2>IMPACT AND APPLICABILITY</h2>
+							</div>
+						</div>
+					</li>
+
+					
+					<li>
+						<div class="cd-slider-content">
+							<div class="content-wrapper">
+								<h3> <center><li style="margin-left:152px;margin-right:152px;margin-top:-89px">Just Imagine! Every women hiring a personal cab, perhaps for going to a place on the same route.</li><li style="margin-left:152px;margin-right:152px;margin-top:39px">Does this sound economical?</li><li style="margin-left:152px;margin-right:152px;margin-top:39px"> Doesn't this lead to a humungous amount of pollution?</li></center> </h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="cd-slider-content">
+							<div class="content-wrapper">
+							<div class="col-lg-12 col-md-6 col-sm-12">
+							<div id="chartContainer1" class="col-lg-6 col-md-6 col-sm-12" style="height: 300px"> </div>
+							<div id="chartContainer2" class="col-lg-6 col-md-6 col-sm-12" style="height: 300px"></div>
+
+					<div class="col-lg-12 col-md-6 col-sm-12">
+								<h4><li>The graphs are a depiction of the number of women preferring to travel by bus, cab or any other means.</li><li>The left one shows the present scenario in which women prefer more cabs than buses.</li><li> We are aiming for a completely opposite scenario that is depicted by the right graph.</li> </h4></div>
+							</div></div>
+						</div>
+					</li>
+					
+					<li>
+						<div class="cd-slider-content">
+							<div class="content-wrapper" style="margin-top:37px">
+								<h3> Now, lets have a look at the way we can deal with this situation.<br>
+                                <p>   <ul style="list-style-type:disc">
+                            	<li style ="margin-left: 12px">Data will be collected and analysed on daily basis subject to the number of women travelling daily and the traffic conditions during predefined time intervals
+								.</li>							   
+								<li style ="margin-left: 12px">If we start separate buses for women on particular routes where there are more number of women travellers, we can reduce the amount of pollution almost by half. </li><li style ="margin-left: 12px">In this case, women will feel safer in opting for public transport which would save them a lot of money.</li><li style ="margin-left: 12px">One more benefit of using public transport is to provide public spaces for women to interact with one another instead of being isolated in their cars or homes.</li>
+								
+								</ul></p></h3>
+							</div>
+						</div>
+					</li>
+					
+				</ol> <!-- .sub-slides -->
+			</li>
+			<li id="slide-4">
+				<ol class="sub-slides">
+					<li>
+						<div class="cd-slider-content">
+							<div class="content-wrapper">
+								<h2>RETURN ON INVESTMENT</h2>
+								<img src="img/money.png" width = "200" height="200">
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="cd-slider-content">
+							<div class="content-wrapper">
+								<h3><p><ul style="list-style-type:disc"><li style ="margin-left: 12px">Public transportation boosts property values.</li><li style ="margin-left: 12px"> Purchasing of new buses will require some kind of investment. The loan will be sanctioned to the bus agency at lower interest rates if the agency has a more certain revenue stream.</li><li style ="margin-left: 12px">The organizations normally own valuable land at key locations, in the form of bus depots and large bus stations. The ‘air space’ above this land could be used for commercial purposes. This could bring in substantial revenues in the form of lease/rents.</li><li style ="margin-left: 12px">In the long run, investing in public transport will lead to larger economic returns for the country.</li></ul> 
+								<br><p></h3>
+							</div>
+						</div>
+					</li>
+
+
+				</ol> <!-- .sub-slides -->
+			</li>
+
+			
+		</ol> <!-- .cd-slideshow -->
+	</div> <!-- .cd-slideshow-wrapper -->
+	
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
